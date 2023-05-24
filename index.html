@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Calculator</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  
+<body>
+  <div class="main">
+ 
+   <form name="form">
+    <input type="text" name="textview" class="textview" id="output">
+   </form>
+   <div class="row">
+      <div class="col-lg-3"><input id="clearAll" type="button" value="C" class="button top-button"></div>
+      <div class="col-lg-3"><input onclick="display('/100')" type="button" value="%" class="button top-button"></div>
+      <div class="col-lg-3"><input id="deleteLastNum" type="button" value="Del" class="button top-button"></div>
+      <div class="col-lg-3"><input onclick="display('/')" type="button" value="&#247;" class="button operator" ></div>
+   </div>
+   <div class="row">
+ 
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="7" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="8" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="9" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display('*')" type="button" value="&#215;" class="button operator" ></div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="4" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="5" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="6" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display('-')" type="button" value="&#8722;" class="button operator"></div>
+   </div>
+ 
+   <div class="row">
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="1" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="2" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="3" class="button" ></div>
+    <div class="col-lg-3"><input onclick="display('+')" type="button" value="&#43;" class="button operator"></div>
+   </div>
+ 
+   <div class="row">
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="." class="button" ></div>
+    <div class="col-lg-3"><input onclick="display(this.value)" type="button" value="0" class="button" ></div>
+    <div class="col-lg-6"><input id="equal" type="button" value="&#61;" class="button equal" ></div>
+   </div>
+   
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
